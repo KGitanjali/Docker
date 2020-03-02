@@ -7,7 +7,7 @@ You need to have windows server 2019.
 
 Run the container with below required parameters:
 
-docker run -d -p 1433:1433 -v C:/sqlserver/:C:/sqlserver/ -e sa_password=xxxx -e ACCEPT_EULA=Y -e attach_dbs="<DB-JSON-CONFIG>" ImageName
+docker run -d -p 1433:1433 -v C:/sqlserver/:C:/sqlserver/ -e sa_password=xxxx -e ACCEPT_EULA=Y -e attach_dbs="<add DB-JSON-CONFIG>" ImageName
 
   -p HostPort:containerPort is for port-mapping a container network port to a host port.
 

@@ -36,7 +36,7 @@ docker run -d -p 1433:1433 -v C:/sqlserver/:C:/sqlserver/ -e sa_password=xxx -e 
 
 The Dockerfile downloads and installs SQL Server 2017 Express:
 SQL Instance Name: SQLEXPRESS
-Root Directory: C:\Program Files\Microsoft SQL Server\MSSQL12.SQLEXPRESS\MSSQL
+Root Directory: C:\Program Files\Microsoft SQL Server\MSSQL14.SQLEXPRESS\MSSQL
 
 To connect to database server ,run container in interactive mode use connect it using below command:
 

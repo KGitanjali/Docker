@@ -1,4 +1,6 @@
-# Docker
+# SQL server inside windows container 2019
+# Base used: mcr.microsoft.com/windows/servercore:ltsc2019
+# SQL SERVER : Microsoft SQL Server 2017 Express Edition
 
 This Dockerfile helps to get started using SQL Server Express in Windows Containers. 
 The file downloads and installs Microsoft SQL Server 2017 Express Edition with the default setup parameters.

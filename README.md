@@ -32,3 +32,16 @@ docker run -d -p 1433:1433 -v C:/sqlserver/:C:/sqlserver/ -e sa_password=xxxx -e
 }
 
 docker run -d -p 1433:1433 -v C:/sqlserver/:C:/sqlserver/ -e sa_password=xxx -e ACCEPT_EULA=Y -e attach_dbs="[{'dbName':'SampleDB','dbFiles':['c:\\sqlserver\\SampleDB.mdf','c:\\sqlserver\\SampleDB.ldf']}]" --name nameofthecontainer NameofImage
+
+
+The Dockerfile downloads and installs SQL Server 2017 Express:
+SQL Instance Name: SQLEXPRESS
+Root Directory: C:\Program Files\Microsoft SQL Server\MSSQL12.SQLEXPRESS\MSSQL
+
+To connect to database server ,run container in interactive mode use connect it using below command:
+
+1. First get container IP address using docker inspect containernameorid command(run in different windows).
+2. sqlcmd -ScontainerIPadrress\SQLEXPRESS -Usa -PpasswordforsaUser(windows where container is run in interactive mode)
+3. run sql queries to get database details.((windows where container is run in interactive mode))
+
+

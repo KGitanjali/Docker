@@ -1,4 +1,4 @@
-# SQL server 2017 inside windows container 2019
+# Microsoft SQL Server 2017 Express Edition inside windows container 2019
 
 
 

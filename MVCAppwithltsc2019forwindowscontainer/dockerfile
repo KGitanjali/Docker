@@ -1,0 +1,6 @@
+FROM mcr.microsoft.com/dotnet/framework/aspnet:4.8-windowsservercore-ltsc2019
+COPY ./bin/Release/Publish/  /inetpub/wwwroot
+RUN md c:\aspnet-startup
+COPY Startup.ps1 c:/aspnet-startup
+SHELL ["powershell", "-Command", "$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]
+ENTRYPOINT ["powershell.exe", "c:\\aspnet-startup\\Startup.ps1"]

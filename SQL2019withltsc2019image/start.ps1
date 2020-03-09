@@ -76,3 +76,5 @@ while ($true)
     $lastCheck = Get-Date 
     Start-Sleep -Seconds 2 
 }
+
+C:\ServiceMonitor.exe w3svc
